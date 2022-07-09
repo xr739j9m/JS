@@ -101,3 +101,34 @@ const greeting = (person) => {
   console.log(greeting({ name: "Alice" }));  // "Howdy, Alice"
   console.log(greeting(null));             // "Howdy, stranger"
   
+  console.log('-----------------------Automatic Type Conversion-------------------------')
+  // type coercion - operator is applied to the “wrong” type of value, JavaScript will
+  // quietly convert that value to the type it needs, using a set of rules that often
+  // aren’t what you want or expect.
+  console.log(8 * null)
+  // → 0
+  console.log("5" - 1)
+  // → 4
+  console.log("5" + 1)
+  // → 51
+  console.log("five" * 2)
+  //→ NaN (undefined or "five" or anything that doesnt map to a number)
+  console.log(false == 0)
+// → true
+console.log(null == undefined);
+// → true
+console.log(null == 0);
+// → false
+console.log('-----------------------No Automatic Type Conversion-------------------------')
+// === or !==
+
+console.log("" === false)
+console.log("" !== false)
+
+console.log('-----------------------Short-circuiting of logical operators-------------------------')
+
+console.log(null || "user")
+// → user
+console.log("Agnes" || "user")
+// → Agnes
+console.log(null && "user")

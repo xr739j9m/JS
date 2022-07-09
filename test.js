@@ -11,3 +11,5 @@ total += count;
 count += 1;
 }
 console.log(total);
+
+console.log('lessgoo')

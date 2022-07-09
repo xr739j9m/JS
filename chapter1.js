@@ -91,3 +91,13 @@ function getFee(currency) {
 const age=22;
 const voter = age > 18 ? "allowed to vote":"not allowed to vote";
 console.log('dudes age is '+age+' therefore he/she is '+voter)
+
+
+const greeting = (person) => {
+    const name = person ? person.name : "stranger";
+    return `Howdy, ${name}`;
+  }
+  
+  console.log(greeting({ name: "Alice" }));  // "Howdy, Alice"
+  console.log(greeting(null));             // "Howdy, stranger"
+  

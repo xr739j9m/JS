@@ -92,6 +92,8 @@ const age=22;
 const voter = age > 18 ? "allowed to vote":"not allowed to vote";
 console.log('dudes age is '+age+' therefore he/she is '+voter)
 
+//left evaluate true
+//right evaluate false
 
 const greeting = (kid) => {
     const name = kid ? kid.name : "nope not my nephew";

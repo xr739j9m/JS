@@ -93,13 +93,13 @@ const voter = age > 18 ? "allowed to vote":"not allowed to vote";
 console.log('dudes age is '+age+' therefore he/she is '+voter)
 
 
-const greeting = (person) => {
-    const name = person ? person.name : "stranger";
-    return `Howdy, ${name}`;
+const greeting = (kid) => {
+    const name = kid ? kid.name : "nope not my nephew";
+    return `heyyy ${name}`;
   }
   
-  console.log(greeting({ name: "Alice" }));  // "Howdy, Alice"
-  console.log(greeting(null));             // "Howdy, stranger"
+  console.log(greeting({ name: "Z" }));  // "heyyy Z"
+  console.log(greeting(null));             // "not my nephew"
   
   console.log('-----------------------Automatic Type Conversion-------------------------')
   // type coercion - operator is applied to the “wrong” type of value, JavaScript will
